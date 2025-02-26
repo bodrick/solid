@@ -15,7 +15,7 @@
     "clean:artifacts": "lerna run clean --parallel",
     "clean:packages": "lerna clean --yes",
     "clean:root": "rimraf node_modules",
-    "test": "lerna run test --concurrency=1 --stream",
+    "test": "lerna run test --concurrency=1 --stream; node .github/setup.js",
     "test:coverage": "lerna run test:coverage --parallel",
     "build": "lerna run build --concurrency=1 --stream",
     "publish:release": "lerna run build && lerna publish",
